@@ -1,0 +1,28 @@
+{
+  "name": "plataforma-de-orientacion-y-peticiones-ciudadanas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alejandro-rgb3/plataforma-de-orientaci-n-y-peticiones-ciudadanas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/alejandro-rgb3/plataforma-de-orientaci-n-y-peticiones-ciudadanas/issues"
+  },
+  "homepage": "https://github.com/alejandro-rgb3/plataforma-de-orientaci-n-y-peticiones-ciudadanas#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
