@@ -2,17 +2,19 @@ require("dotenv").config();
 
 const express = require("express");
 const path = require("path");
+const peticionesRoutes = require("./src/routes/peticiones.routes");
 
 const app = express();
 
 const PORT = process.env.PORT || 3000;
-const APP_NAME =
-  process.env.APP_NAME || "Plataforma de Orientación y Peticiones Ciudadanas";
+const APP_NAME = process.env.APP_NAME || "Plataforma de Orientación y Peticiones Ciudadanas";
 const APP_ENV = process.env.APP_ENV || "development";
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
+
+app.use("/api/peticiones", peticionesRoutes);
 
 app.get("/", (req, res) => {
   res.send(`
